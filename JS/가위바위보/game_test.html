@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="keywords" content="게임 실습">
+    <meta name="description" content="가위바위보">
+    <title>가위바위보게임</title>
+    <link rel="stylesheet" href="./css1.css">
+</head>
+<body>
+    <form name = game>
+        <table id="game-table" border="3" cellpadding="5">
+        <tr>
+            <th>선택 -> </th>
+            <td><img src="img/rock.png" onclick="playGame(1)"></td>
+            <td><img src="img/paper.png" onclick="playGame(2)"></td>
+            <td><img src="img/sissor.png" onclick="playGame(3)"></td>
+        </tr>
+        <td colspan="4">
+            <input type="text" id="msg" size="60" placeholder="굿게임">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <input type=text class="WWW" name="win" readonly value="0" size="2">
+            번째 이김!
+            <input type=text class="WWW" name="loes" readonly value="0" size="2">
+            번째 졌음! 
+            <input type=text class="WWW" name="draw" readonly value="0" size="2">
+            번째 무승부!
+        </td>
+        </tr>
+    </table>
+    </form>
+
+    <table cellspacing = "2" cellpadding="2">
+        <tr>
+            <td id = "tab_td" valign="middle">
+            -- 게임 방법 --
+            </td></tr>
+            <TR><TD bgcolor="cornsilk">
+            1. 가위 바위 보 게임
+            <BR>
+            2. 그림을 선택하시면 게임이 진행되고, 승부 결과가 나옵니다.
+            <BR>
+            3. 계속 그림을 선택하면 게임이 무한 승부 됩니다.
+            </TD></TR>
+            </TABLE>
+    <script src="./jsp1.js"></script>
+</body>
+</html>

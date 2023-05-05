@@ -1,0 +1,93 @@
+<title>회원가입</title>
+
+</head>
+
+<!-- join_form.html -->
+
+<body>
+    <form name="" orm action = "0317_2.html" method="">
+
+   <h1>회원 정보 입력</h1>
+   <hr><table>
+
+
+      <tr>
+        <td>아이디</td>
+        <td><input type="text">
+            <input type="button" value="중복확인" onclick="alert('중복 없음')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>비밀번호</td>
+         <td><input type="password"> </td>
+      </tr>
+
+      <tr>
+        <td>이름</td>
+        <td><input type="text"> </td>
+      </tr>
+
+      <tr>
+        <td>전화번호</td>
+        <td><input type="text" size="3"value="010"> -
+            <input type="text" size="4"> -
+            <input type="text" size="4">
+        </td>
+      </tr>
+
+      <tr>
+        <td>직업</td>
+        <td><select>
+              <option>-직업-</option>
+              <option>학생</option>
+              <option>회사원</option>
+              <option>프로그래머</option>
+              <option>기타</option>
+            </select>            
+        </td>
+
+        <tr>
+            <td>성별</td>
+            <td>
+                <input type="radio" name="gender" value="m">남성
+                <input type="radio" name="gender" value="g">여성
+            </td>
+            </tr>
+        <tr>
+            <td>취미</td>
+            <td>
+                <input type="checkbox">독서 읽기
+                <input type="checkbox">게임하기
+                <input type="checkbox">영화 및 유튜브
+                <input type="checkbox">음악 듣기
+                <input type="checkbox">기타
+            </td>
+        </tr>
+
+        <tr>
+            <td>자기 소개</td>
+            <td>
+                <textarea rows="7" cols="60">자기소개를 해주세요!</textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+        <tr>
+            <td>
+                <input type="checkbox"> 이메일 수신 동의
+                <input type="checkbox"> SNS 수신 동의
+            </td>
+        </tr>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="등록하기" onclick="alert('등록완료!')">
+                <input type="reset" value="취소하기" onclick="alert('취 소')">
+            </td>      
+        </tr>
+    </table> 
+
+    </form>
+</body>
+</html>

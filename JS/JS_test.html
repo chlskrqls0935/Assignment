@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 없이 자바스크립트만 만들기</title>
+</head>
+<style>
+  
+</style> 
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class ="a1">javeScript</a></li>
+        <button class="a2">버튼</button><br>
+        <button class="a3">버튼2</button>
+    </ul>
+    <script>
+        let text1 = document.querySelector('.a1');
+            text1.onclick = function(){
+            text1.style.color ='red';
+         }
+    
+        let text2 = document.querySelector('.a2');           
+        text2.onclick = function(){
+          document.body.style.backgroundColor='black';
+          document.body.style.color = 'white';
+          text1.style.color ='yellow';  
+        }
+        let text3 = document.querySelector('.a3');
+        text3.onclick = function(){
+            document.body.style.backgroundColor='green';
+            document.body.style.color = 'white';
+            text1.style.color ='yellow'; 
+        }
+    </script>
+    
+</body>
+</html>
